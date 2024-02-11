@@ -4,24 +4,100 @@
     font-family: 'Protest Guerrilla', sans-serif;;
 }
 
-header{
-    background-color: brown;
+main{
+    background: linear-gradient(blue,white, red);
 }
-
+/* all heading styles */
 h1{
     font-size: 45px;
+    padding: 20px;
+    text-align: center;
 }
 
 #desc {
-font-size: 20px;
+font-size: 25px;
+text-align: center;
 }
 
 nav{
     display: flex;
     justify-content: end;
+    padding: 10px;
+}
+
+nav a{
+    margin: 5px;
+    color: black;
+    font-size: 20px;
 }
 
 .pic-of-me{
     display: flex;
     justify-content: end;
+}
+.pic-of-me img{
+    border-radius: 25%;
+    
+}
+/* projects styles */
+h2{
+    font-size: 35px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.project-one , .project-two{
+    display: flex;
+    justify-content: end;
+}
+
+#project-one-desc, #project-two-desc{
+    text-align: center;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#project-one-img{
+    width:100%;
+    height: 75%;
+    border-radius: 50%;
+}
+
+#project-one-img:hover{
+    border-radius: 0%;
+}
+
+#project-two-img{
+    width: 50%;
+    padding: 10px;
+    border-radius: 50%;
+}
+/* About me styles */
+#about-desc{
+    font-size:25px ;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* contacts styles */
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 5px dashed blue;
+    font-size: 30px;
+}
+
+.list a{
+    color: black;
+}
+
+footer{
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
 }
