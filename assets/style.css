@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
 
 *{
-    font-family: 'Protest Guerrilla', sans-serif;;
+    font-family: 'Protest Riot', sans-serif;;
 }
 
 main{
     background: linear-gradient(blue,white, red);
 }
-/* all heading styles */
+/* all header styles */
+
 h1{
     font-size: 45px;
-    padding: 20px;
+    padding-bottom: 20px;
     text-align: center;
+    position: relative;
+    top: 100px;
 }
 
 #desc {
 font-size: 25px;
 text-align: center;
+position: relative;
+top: 100px;
 }
 
 nav{
@@ -28,7 +33,7 @@ nav{
 nav a{
     margin: 5px;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .pic-of-me{
@@ -37,7 +42,7 @@ nav a{
 }
 .pic-of-me img{
     border-radius: 25%;
-    
+    width: 25%;
 }
 /* projects styles */
 h2{
@@ -71,7 +76,7 @@ h2{
 }
 
 #project-two-img{
-    width: 50%;
+    width: 25%;
     padding: 10px;
     border-radius: 50%;
 }
@@ -100,4 +105,40 @@ footer{
     font-size: 25px;
     text-align: center;
     padding: 50px;
+}
+
+/* different screen size */
+
+@media screen and (max-width: 576px){
+h1, #desc{
+  position: static;
+  text-align: center;  
+}
+nav{
+    display: block;
+    text-align: center;
+}
+.pic-of-me{
+    justify-content: center;
+}
+h2{
+    font-size: 25px;
+}
+#project-one-desc{
+    font-size: 15px;
+}
+#project-two-desc{
+    font-size: 15px;
+}
+#about-desc{
+    font-size: 15px;
+}
+.list{
+    font-size: 15px;
+    padding: 15px;
+}
+footer{
+    font-size: 10px;
+    padding: 10px;
+}
 }
