@@ -76,10 +76,14 @@ h2{
 }
 
 #project-two-img{
-    width: 25%;
+    width: 100%;
     padding: 10px;
     border-radius: 50%;
 }
+#project-two-img:hover{
+    border-radius: 0%;
+}
+
 /* About me styles */
 #about-desc{
     font-size:25px ;
